@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseRegistration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#registration">Register</a></li>
+            <li><a href="view">View</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Course Registration</h1>
+    </header>
+
+    <main>
+       <form action="registration" method="POST">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" name="studentName" required>
+
+        <label for="studentId">Student ID</label>
+        <input type="text" id="studentId" name="studentId" required>
+
+        <label for="programme">Programme</label>
+        <select name="programme" id="programme" required>
+            <option value="">Select programme</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+
+        <label for="course">Course</label>
+        <select name="course" id="course" required>
+            <option value="">Select Course</option>
+            <option value="ICT411">ICT411 Cloud Computing</option>
+            <option value="ICT461">ICT461 Web Systems & Technology</option>
+            <option value="ICS441">ICS441 Cybersecurity and Ethical Hacking</option>
+            <option value="ICT481">ICT481 Software Project Management</option>
+        </select>
+        <button type="submit">Register</button>
+       </form>
+       <p id="feedBack" aria-live="polite"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Course Registration. All rights reserved. Mulungushi University.</p>
+    </footer>
+</body>
